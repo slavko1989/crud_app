@@ -11,9 +11,9 @@
           <a class="nav-link" href="{{ url('/create') }}">Add employee</a>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">Search</button>
+      <form class="d-flex" method="get" action="{{ url('/search_page') }}">
+        <input class="form-control me-2" type="text" placeholder="Search" name="search">
+        <input class="btn btn-primary" type="submit" name="submit" value="Search">
       </form>
     </div>
   </div>

@@ -19,6 +19,8 @@ use App\Http\Controllers\EmployeeController;
 
 Route::controller(HomeController::class)->group(function() {
     Route::get('/','home');
+    Route::get('/search_page','search_page');
+
 });
 
 Route::controller(EmployeeController::class)->group(function() {
